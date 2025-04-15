@@ -16,9 +16,27 @@
     background-color: blue;
     transition: background-color 1s, transform 1s;
     border-radius: 50%;
+    animation: animationnamegoeshere 5s infinite linear;
+    position: absolute;
 }
 
 .bubble:hover {
     background-color: steelblue;
-    transform: scale(2, 0.5);
+    transform: scale(2,);
+}
+
+.bubble:nth-child(2){
+    animation: animationnamegoeshere 10s infinite linear;
+}
+
+@keyframes animationnamegoeshere{
+    0% {
+        bottom: -1000px
+        transform: translateY(0)
+    }
+     
+    100% {
+        bottom: 1000%px;
+        transform: translateY(1000px)
+    }
 }
