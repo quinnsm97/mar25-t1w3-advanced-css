@@ -1,0 +1,49 @@
+:root {
+    --bubble-background: green;
+  }
+  
+  .bubbles {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: paleturquoise;
+  }
+  
+  .bubble {
+    width: 10dvw;
+    /* aspect-ratio: 1; */
+    height: 10dvw;
+    background-color: red;
+    height: 100dvh;
+    background-color: paleturquoise;
+  }
+  
+  .bubble {
+    width: 10dvw;
+    /* aspect-ratio: 1; */
+    height: 10dvw;
+    background-color: blue;
+    transition: background-color 1s, transform 1s;
+    border-radius: 50%;
+    animation: animationNameGoesHere 5s infinite linear;
+    position: absolute;
+  }
+  
+  .bubble:hover {
+    background-color: steelblue;
+    transform: scale(2);
+  }
+  
+  .bubble:nth-child(2) {
+    animation: animationNameGoesHere 10s infinite linear;
+  }
+  
+  @keyframes animationNameGoesHere {
+    0% {
+      bottom: 1000px;
+      transform: translateY(0);
+    }
+    100% {
+      bottom: 1000px;
+      transform: translateY(1000px);
+    }
+  }/*# sourceMappingURL=styles.css.map */
